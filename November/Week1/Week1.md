@@ -13,7 +13,7 @@ Selamat datang di pembelajaran dasar-dasar JavaScript. Hari ini kita akan memula
     - Fungsi
     - Alur Kendali
     - Objek dan Array
-4. [Peran JavaScript dalam Pengembangan Web](#️peran-javascript-dalam-pengembangan-web)
+4. [Peran JavaScript dalam Pengembangan Web](#peran-javascript-dalam-pengembangan-web)
 5. [Konsep Lanjutan](#konsep-lanjutan)
     - [Scope dan Closures](#scope-dan-closures)
     - [JavaScript Async](#javascript-asinkron)
