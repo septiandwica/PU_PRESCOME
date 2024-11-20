@@ -10,3 +10,7 @@
 **Setup API**:
 - API Cuaca: https://newsapi.org/
 - API Berita: https://openweathermap.org/api
+
+
+API KEY WEATHER = '8da9f051b5269f51ca25dbbb5edb350d'; 
+API KEY NEWS = '33583470dfca4097be36df7d00ec09c9'; 
