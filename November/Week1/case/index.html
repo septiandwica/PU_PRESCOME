@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todolist</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Todolist</h1>
+  <input type="text" id="taskInput" placeholder="Tambahkan tugas baru">
+  <button id="addTask">Tambah</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    const taskInput = document.getElementById("taskInput");
+    const addTaskButton = document.getElementById("addTask");
+    const taskList = document.getElementById("taskList");
+
+    addTaskButton.addEventListener("click", () => {
+      const task = taskInput.value.trim();
+      if (task) {
+        const listItem = document.createElement("li");
+        listItem.textContent = task;
+
+        // Menambahkan tombol selesai
+        const completeButton = document.createElement("button");
+        completeButton.textContent = "Selesai";
+        completeButton.addEventListener("click", () => {
+          listItem.classList.toggle("completed");
+        });
+
+        // Menambahkan tombol hapus
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Hapus";
+        deleteButton.addEventListener("click", () => {
+          taskList.removeChild(listItem);
+        });
+
+        listItem.appendChild(completeButton);
+        listItem.appendChild(deleteButton);
+        taskList.appendChild(listItem);
+        taskInput.value = ""; // Bersihkan input
+      }
+    });
+  </script>
+</body>
+</html>
